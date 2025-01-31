@@ -1,0 +1,49 @@
+\documentclass{exam}
+
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{braket}
+\usepackage{forloop}
+\usepackage{amsthm}
+\usepackage[backend=biber]{biblatex}
+
+\theoremstyle{plain}
+\newtheorem{assumption}{Assumption}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\newtheorem{lemma}{Lemma}
+
+\input{preamble.sty}
+
+\addbibresource{references.bib}
+
+\begin{document}
+
+\title{MAT258S25 Proof 2}
+\author{Kishan S Patel}
+\maketitle
+
+\renewcommand{\qedsymbol}{QED}
+
+\noindent\rule{\textwidth}{1pt}
+
+
+\noindent\rule{\textwidth}{1pt}
+
+\begin{align*}
+	\llet f & : A \to B      \\
+	\llet g & : B \to C      \\
+	A       & \neq \emptyset \\
+	B       & \neq \emptyset \\
+	C       & \neq \emptyset
+\end{align*}
+
+\begin{questions}
+	\input{proofs/proof1.tex}
+	\include{proofs/proof2.tex}
+\end{questions}
+
+\end{document}
