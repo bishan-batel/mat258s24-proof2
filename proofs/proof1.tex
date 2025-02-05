@@ -1,21 +1,16 @@
 \begin{question}
 
-	If $f\circ g$ is injective, then $g$ is injective ($P$).
+	If $f\circ g$ is injective, then $g$ is injective.
 
 	\begin{proof}
-		$$
-			P = \forall x_1,x_2 \in B, g(x_1)=g(x_2) \iff x_1=x_2
-		$$
+		\[ P_{f\circ g} = \forall x_0, x_1  \in Z : \,	(f \circ g)(x) = (f\circ g)(y) \iff x = y \]
 
 		\begin{align*}
-			g: y                   & \mapsto z \\
-			f: x                   & \mapsto y \\
-			\therefore f\circ g: a & \mapsto c
+			\llet x, y     & \in X            \\
+			g(x)           & = g(y)           \\
+			(f \circ g)(x) & = (f \circ g)(y) \\
+			P_{f\circ g}   & \implies x = y
 		\end{align*}
-
-		\begin{align*}
-			\neg P & \implies \exists y_0,y_1 \in B :\, g(y_0)=g(y_1) \wedge y_0 = y_1 \\
-			       & \implies (f \circ g)(x_0) = f( y_0 ) = f(y_1)
-		\end{align*}
+		$$ \therefore \not\exists x,y\in X : \, g(x) = g(y) \wedge x \neq y $$
 	\end{proof}
 \end{question}
